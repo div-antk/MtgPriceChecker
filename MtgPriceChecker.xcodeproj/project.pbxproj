@@ -13,9 +13,12 @@
 		3B372839267A3860007BA1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B372837267A3860007BA1AE /* Main.storyboard */; };
 		3B37283B267A3862007BA1AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B37283A267A3862007BA1AE /* Assets.xcassets */; };
 		3B37283E267A3862007BA1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B37283C267A3862007BA1AE /* LaunchScreen.storyboard */; };
+		C8ACF020C9D36E8593EC721E /* Pods_MtgPriceChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1961A0BF0DBC627CA94E05C9 /* Pods_MtgPriceChecker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1106AC08348DA49EE254D627 /* Pods-MtgPriceChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MtgPriceChecker.debug.xcconfig"; path = "Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		1961A0BF0DBC627CA94E05C9 /* Pods_MtgPriceChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MtgPriceChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B37282E267A3860007BA1AE /* MtgPriceChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtgPriceChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B372831267A3860007BA1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B372833267A3860007BA1AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		3B37283A267A3862007BA1AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B37283D267A3862007BA1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B37283F267A3862007BA1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD874FCB5B71F5720D026D17 /* Pods-MtgPriceChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MtgPriceChecker.release.xcconfig"; path = "Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ACF020C9D36E8593EC721E /* Pods_MtgPriceChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311F63CE6730E4122F0C8CEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1106AC08348DA49EE254D627 /* Pods-MtgPriceChecker.debug.xcconfig */,
+				FD874FCB5B71F5720D026D17 /* Pods-MtgPriceChecker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3B372825267A3860007BA1AE = {
 			isa = PBXGroup;
 			children = (
 				3B372830267A3860007BA1AE /* MtgPriceChecker */,
 				3B37282F267A3860007BA1AE /* Products */,
+				311F63CE6730E4122F0C8CEE /* Pods */,
+				8CB86FDAB201BE76EB57BA06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = MtgPriceChecker;
 			sourceTree = "<group>";
 		};
+		8CB86FDAB201BE76EB57BA06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1961A0BF0DBC627CA94E05C9 /* Pods_MtgPriceChecker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B372842267A3862007BA1AE /* Build configuration list for PBXNativeTarget "MtgPriceChecker" */;
 			buildPhases = (
+				F6131323B72B1248FEC14DCF /* [CP] Check Pods Manifest.lock */,
 				3B37282A267A3860007BA1AE /* Sources */,
 				3B37282B267A3860007BA1AE /* Frameworks */,
 				3B37282C267A3860007BA1AE /* Resources */,
+				A19F7A213351E90B97EABF58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A19F7A213351E90B97EABF58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6131323B72B1248FEC14DCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MtgPriceChecker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B37282A267A3860007BA1AE /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		3B372843267A3862007BA1AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1106AC08348DA49EE254D627 /* Pods-MtgPriceChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		3B372844267A3862007BA1AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD874FCB5B71F5720D026D17 /* Pods-MtgPriceChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

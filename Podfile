@@ -6,5 +6,9 @@ target 'MtgPriceChecker' do
   use_frameworks!
 
   # Pods for MtgPriceChecker
-
+  pod 'Moya/RxSwift'
+  pod 'RxCocoa'
+  pod 'Instantiate'
+  pod 'InstantiateStandard'
+  pod 'Kingfisher'
 end
