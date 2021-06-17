@@ -14,9 +14,37 @@
                     <view key="view" contentMode="scaleToFill" id="WTL-vg-Kri">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGM-3J-oOw">
+                                <rect key="frame" x="16" y="60" width="382" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vfY-kn-gXI"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jia-DU-WhQ">
+                                <rect key="frame" x="16" y="132" width="382" height="610"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uRv-hA-ne6"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jia-DU-WhQ" firstAttribute="top" secondItem="BGM-3J-oOw" secondAttribute="bottom" constant="32" id="58B-uN-hgE"/>
+                            <constraint firstItem="uRv-hA-ne6" firstAttribute="trailing" secondItem="jia-DU-WhQ" secondAttribute="trailing" constant="16" id="Dzr-3W-qfF"/>
+                            <constraint firstItem="jia-DU-WhQ" firstAttribute="leading" secondItem="uRv-hA-ne6" secondAttribute="leading" constant="16" id="SKM-pg-oNB"/>
+                            <constraint firstItem="uRv-hA-ne6" firstAttribute="trailing" secondItem="BGM-3J-oOw" secondAttribute="trailing" constant="16" id="WrQ-D3-LtK"/>
+                            <constraint firstItem="BGM-3J-oOw" firstAttribute="leading" secondItem="uRv-hA-ne6" secondAttribute="leading" constant="16" id="eAn-A4-zCL"/>
+                            <constraint firstItem="BGM-3J-oOw" firstAttribute="top" secondItem="uRv-hA-ne6" secondAttribute="top" constant="16" id="mWZ-bH-f9n"/>
+                            <constraint firstItem="uRv-hA-ne6" firstAttribute="bottom" secondItem="jia-DU-WhQ" secondAttribute="bottom" constant="120" id="xE4-dm-2tD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="jia-DU-WhQ" id="Jfh-KC-mxq"/>
+                        <outlet property="cardNameTextField" destination="BGM-3J-oOw" id="NLw-eb-dZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPZ-lS-SIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
