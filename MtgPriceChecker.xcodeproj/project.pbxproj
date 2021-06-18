@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1F10AA267B901E00DC64DE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1F10A9267B901E00DC64DE /* Card.swift */; };
 		3B372832267A3860007BA1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372831267A3860007BA1AE /* AppDelegate.swift */; };
 		3B372834267A3860007BA1AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372833267A3860007BA1AE /* SceneDelegate.swift */; };
 		3B372836267A3860007BA1AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372835267A3860007BA1AE /* HomeViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		1106AC08348DA49EE254D627 /* Pods-MtgPriceChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MtgPriceChecker.debug.xcconfig"; path = "Target Support Files/Pods-MtgPriceChecker/Pods-MtgPriceChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		1961A0BF0DBC627CA94E05C9 /* Pods_MtgPriceChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MtgPriceChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1F10A9267B901E00DC64DE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3B37282E267A3860007BA1AE /* MtgPriceChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtgPriceChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B372831267A3860007BA1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B372833267A3860007BA1AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3B1F10A8267B900300DC64DE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3B1F10A9267B901E00DC64DE /* Card.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		3B372825267A3860007BA1AE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 			children = (
 				3B372831267A3860007BA1AE /* AppDelegate.swift */,
 				3B372833267A3860007BA1AE /* SceneDelegate.swift */,
+				3B1F10A8267B900300DC64DE /* Entity */,
 				3B1D03E8267B8BEA002BD926 /* View */,
 				3B37283A267A3862007BA1AE /* Assets.xcassets */,
 				3B37283C267A3862007BA1AE /* LaunchScreen.storyboard */,
@@ -216,6 +227,7 @@
 				3B372836267A3860007BA1AE /* HomeViewController.swift in Sources */,
 				3B372832267A3860007BA1AE /* AppDelegate.swift in Sources */,
 				3B372834267A3860007BA1AE /* SceneDelegate.swift in Sources */,
+				3B1F10AA267B901E00DC64DE /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
