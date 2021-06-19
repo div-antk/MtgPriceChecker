@@ -8,10 +8,10 @@
 import Foundation
 
 struct CardResponse: Codable {
-    let data: [Data]
+    let data: [CardData]
 }
 
-struct Data: Codable {
+struct CardData: Codable {
     let name: String?
     let prices: [Prices]
     let image_uris: [Images]
