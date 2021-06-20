@@ -9,14 +9,19 @@ import Foundation
 import Moya
 import RxSwift
 
-//final class CardRepository {
-//    private static let cardProvider = MoyaProvider<>
-//    private static let disposeBag = DisposeBag()
-//}
-//
-//extension CardRepository {
-//
-//    static func fetchCards() -> Observable<[CardResponse]> {
-//        return
-//    }
-//}
+final class CardRepository {
+    private static let apiProvider = MoyaProvider<MtgAPI>()
+    private static let disposeBag = DisposeBag()
+}
+
+extension CardRepository {
+
+    static func getCardDatas(name: String) -> Observable<[CardResponse]> {
+        return apiProvider.rx.request(.card(name))
+            .map{ response in
+                let decoder = JSONDecoder()
+                return try decoder.decode([CardResponse].self, from: response.data)
+            }
+            .asObservable()
+    }
+}

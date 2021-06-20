@@ -23,7 +23,7 @@ extension MtgAPI: TargetType {
     }
     
     var path: String {
-        return "/cards/search?order=cmc&q=necro"
+        return "/cards/search"
     }
     
     var method: Moya.Method {
