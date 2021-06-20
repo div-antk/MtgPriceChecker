@@ -10,6 +10,7 @@
 		3B1F10AA267B901E00DC64DE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1F10A9267B901E00DC64DE /* Card.swift */; };
 		3B1F10AD267E2FDE00DC64DE /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1F10AC267E2FDD00DC64DE /* CardRepository.swift */; };
 		3B1F10B2267E31A100DC64DE /* MtgAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1F10B1267E31A100DC64DE /* MtgAPI.swift */; };
+		3B297677267F81DC008EA503 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B297676267F81DB008EA503 /* CardViewModel.swift */; };
 		3B372832267A3860007BA1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372831267A3860007BA1AE /* AppDelegate.swift */; };
 		3B372834267A3860007BA1AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372833267A3860007BA1AE /* SceneDelegate.swift */; };
 		3B372836267A3860007BA1AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B372835267A3860007BA1AE /* HomeViewController.swift */; };
@@ -25,6 +26,7 @@
 		3B1F10A9267B901E00DC64DE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3B1F10AC267E2FDD00DC64DE /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		3B1F10B1267E31A100DC64DE /* MtgAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgAPI.swift; sourceTree = "<group>"; };
+		3B297676267F81DB008EA503 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		3B37282E267A3860007BA1AE /* MtgPriceChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtgPriceChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B372831267A3860007BA1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B372833267A3860007BA1AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		3B297679267F81E3008EA503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B297676267F81DB008EA503 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3B372825267A3860007BA1AE = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 				3B372831267A3860007BA1AE /* AppDelegate.swift */,
 				3B372833267A3860007BA1AE /* SceneDelegate.swift */,
 				3B1F10B1267E31A100DC64DE /* MtgAPI.swift */,
+				3B297679267F81E3008EA503 /* ViewModel */,
 				3B1F10AF267E300100DC64DE /* Repository */,
 				3B1F10A8267B900300DC64DE /* Entity */,
 				3B1D03E8267B8BEA002BD926 /* View */,
@@ -244,6 +255,7 @@
 				3B372834267A3860007BA1AE /* SceneDelegate.swift in Sources */,
 				3B1F10AA267B901E00DC64DE /* Card.swift in Sources */,
 				3B1F10B2267E31A100DC64DE /* MtgAPI.swift in Sources */,
+				3B297677267F81DC008EA503 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
