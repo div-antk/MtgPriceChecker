@@ -16,7 +16,7 @@ final class CardRepository {
 
 extension CardRepository {
 
-    static func getCardDatas(name: String) -> Observable<[CardResponse]> {
+    static func getCardData(name: String) -> Observable<[CardResponse]> {
         return apiProvider.rx.request(.card(name))
             .map{ response in
                 let decoder = JSONDecoder()

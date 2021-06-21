@@ -15,7 +15,7 @@ protocol CardViewModelInputs {
 }
 
 protocol CardViewModelOutputs {
-    var cardDatas: Observable<[CardResponse]> { get }
+    var cardData: Observable<[CardResponse]> { get }
 }
 
 protocol CardViewModelType {
@@ -32,13 +32,17 @@ class CardViewModel: CardViewModelType, CardViewModelInputs, CardViewModelOutput
     let searchWord: AnyObserver<String>
     
     // MARK: - OUTPUT
-    let cardDatas: Observable<[CardResponse]>
+    let cardData: Observable<[CardResponse]>
     
     private let disposeBag = DisposeBag()
     private let apiProvider = MoyaProvider<MtgAPI>()
     
     init() {
-        
-        
+        let _searchWord = PublishRelay<String>()
+        self.searchWord = AnyObserver<String>() { event in
+            guard let text = event.element else { return }
+            _searchWord.accept(text)
+        }
     }
 }
+
