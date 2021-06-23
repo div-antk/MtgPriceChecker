@@ -45,6 +45,7 @@ class CardViewModel: CardViewModelInputs, CardViewModelOutputs {
         self.searchWord = AnyObserver<String>() { event in
             guard let text = event.element else { return }
             _searchWord.accept(text)
+            print("(；´Д｀)", text)
         }
         
         _searchWord
