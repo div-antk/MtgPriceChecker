@@ -29,6 +29,9 @@ class HomeViewController: UIViewController, StoryboardInstantiatable {
             .bind(to: vm.searchWord)
             .disposed(by: disposeBag)
         
+//        vm.output.cardData
+//            .bind(to: <#T##[CardResponse]...##[CardResponse]#>)
+        
     }
 
 
