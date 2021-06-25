@@ -10,17 +10,18 @@ import Moya
 import RxSwift
 
 final class CardRepository {
-    private static let apiProvider = MoyaProvider<MtgAPI>()
+    private static let provider = MoyaProvider<MtgAPI>()
     private static let disposeBag = DisposeBag()
 }
 
 extension CardRepository {
 
     static func getCardData(name: String) -> Observable<[CardResponse]> {
-        return apiProvider.rx.request(.card(name))
+        return provider.rx.request(.card(name))
             .map{ response in
                 print("レス", response.request?.url)
                 let decoder = JSONDecoder()
+                print(try decoder.decode([CardResponse].self, from: response.data))
                 return try decoder.decode([CardResponse].self, from: response.data)
             }
             .asObservable()
