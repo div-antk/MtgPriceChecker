@@ -19,9 +19,8 @@ extension CardRepository {
     static func getCardData(name: String) -> Observable<[CardResponse]> {
         return provider.rx.request(.card(name))
             .map{ response in
-                print("レス", response.request?.url)
+                print("レス", response)
                 let decoder = JSONDecoder()
-                print(try decoder.decode([CardResponse].self, from: response.data))
                 return try decoder.decode([CardResponse].self, from: response.data)
             }
             .asObservable()
